@@ -3,6 +3,8 @@ Chieh Yang - Storefront-app
 
 Design Doc
 
+https://docs.google.com/document/d/18pfa2TFY1-WkGXqHlvgs0cps6uzihErsYMTWAfXcyzE/edit?usp=sharing
+
 Wireframe/Prototypes porject
 
 Project Roadmap - Development
