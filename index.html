@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page </title>
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+
+<body>
+    <main id="app">
+        <header class="main-header">
+            <div class="main-header-inner">
+                <div class="header-logo-wrapper">
+                    <router-link to="/index">
+                        <img class="main-header-logo" src="public/images/dewalt-logo.svg" alt="dewalt logo">
+                    </router-link>
+                </div>
+                <div class="main-header-right">
+                    <nav class="main-header-nav-wrapper nav">
+                        <ul class="main-header-nav">
+                            <li>
+                                <router-link to="/index">
+                                    Home
+                                </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/product/lawn">
+                                    Lawn Mowers
+                                </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/product/saw">
+                                    Saw
+                                </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/product/drill">
+                                    Drill
+                                </router-link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="shopping-cart">
+                    <router-link to="/shopcard">
+                        <img class="shopping-cart-image" src="public/images/cart.png" alt="shopping cart">
+                    </router-link>
+
+                </div>
+            </div>
+        </header>
+        <router-view></router-view>
+
+
+        <footer class="main-page-footer-section">
+            <div class="footer-logo-wrapper">
+                <img class="main-footer-logo" src="public/images/dewalt-logo.svg" alt="dewalt logo">
+            </div>
+            <div class="main-footer-inner">
+                <div class="main-footer-right">
+                    <nav class="main-footer-nav-wrapper nav">
+                        <ul class="main-footer-nav">
+                            <li><a @click='goto("/index")' href="javascript:;">Home</a></li>
+                            <li><a @click='goto("/product/lawn")' href="javascript:;">Lawn Mowers</a></li>
+                            <li><a @click='goto("/product/saw")' href="javascript:;">Saw</a></li>
+                            <li><a @click='goto("/product/drill")' href="javascript:;">Drill</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script type="module" src="./public/js/main.js"></script>
+</body>
+
+
+</html>
